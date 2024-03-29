@@ -1,0 +1,10 @@
+{
+	"answers": {
+		"textContent": "MSC",
+		"textColor": "blue",
+		"textFont": "Brush Script MT",
+		"backgroundShape": "circle",
+		"backgroundColor": "green",
+		"fileName": "msctest"
+	}
+}
