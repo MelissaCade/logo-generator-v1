@@ -1,6 +1,8 @@
+//references Text and Shape files
 const Text = require("./text");
 const Shape = require("./shapes");
 
+//this passes the data necessary to make the svgText and svgShape files return the strings required to "build" our svg logo
 function createSVG(data) {
   const svgText = new Text(
     data.textContent,

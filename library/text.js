@@ -10,11 +10,11 @@ class Text {
   renderText() {
     if (this.backgroundShape === "triangle") {
       const svgText = `<style>
-          .logo {
-              font: 100px "${this.textFont}"
-          }
-          </style>
-          <text class="logo" x="150" y="230" text-anchor="middle" fill="${this.textColor}">${this.textContent}</text>`;
+      .logo {
+          font: 100px "${this.textFont}"
+      }
+      </style>
+      <text class="logo" x="150" y="230" text-anchor="middle" fill="${this.textColor}">${this.textContent}</text>`;
       return svgText;
     } else if (this.textFont === "Arial") {
       const svgText = `<style>
