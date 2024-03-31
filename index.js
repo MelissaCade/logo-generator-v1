@@ -1,6 +1,6 @@
-import inquirer from "inquirer";
-import jest from "jest";
-import fs from "fs";
+const fs = require("fs");
+const inquirer = require("inquirer");
+const createSVG = require("./library/createSVG");
 
 const questions = [
   {
@@ -50,15 +50,15 @@ const questions = [
 
 function start() {
   inquirer.prompt(questions).then((answers) => {
-    fs.writeFile(
-      "userInput.json",
-      JSON.stringify({ answers }, null, "\t"),
-      (err) => {
-        err
-          ? console.log(err)
-          : console.log("User Data successfully saved to file.");
+    console.log(answers);
+    const fileName = answers.fileName;
+    fs.writeFile(`./examples/${fileName}.svg`, createSVG(answers), (err) => {
+      if (err) {
+        console.error(err);
+      } else {
+        console.log("Your svg logo has been created.");
       }
-    );
+    });
   });
 }
 
