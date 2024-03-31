@@ -1,10 +1,11 @@
 const fs = require("fs");
-
+//declare a new class called "Shape" that takes in the user-specified shape and color
 class Shape {
   constructor(backgroundShape, backgroundColor) {
     this.backgroundShape = backgroundShape;
     this.backgroundColor = backgroundColor;
   }
+  //I wanted a few more shape options, so instead of creating separate classes for each shape, I have the specifications for each choice here
   renderShape() {
     if (this.backgroundShape === "square") {
       const svgShape = `<rect width="300" height="300" fill="${this.backgroundColor}" />`;

@@ -3,7 +3,7 @@ const Shape = require("../library/shapes");
 
 // A testing suite for Shape is created.
 describe("Shape", () => {
-  // A test is created to check that when a shape and color are passed by the user, the correct shape/color is returned.
+  // A test is created to check that when a shape and color are passed by the user, the correct shape/color is returned. I wrote one test for each shape, and included a variety of named colors.
   describe("renderShape", () => {
     it("should be a blue square", () => {
       const shapeCode = `<rect width="300" height="300" fill="blue" />`;

@@ -3,7 +3,7 @@ const Text = require("../library/text");
 
 // A testing suite for Text is created.
 describe("Text", () => {
-  // A test is created to check that when a string of text, a color, a font, and a shape are input by the user, it returns the correct svg code
+  // A test is created to check that when a string of text, a color, a font, and a shape are input by the user, it returns the correct svg code. I tested three font/shape/color options to be thorough.
   describe("renderText", () => {
     it("should return a text string of 'ABC' in red with Arial font", () => {
       const textCode = `<style>
