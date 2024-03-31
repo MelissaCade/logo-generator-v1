@@ -9,6 +9,7 @@ This application takes in user data in regards to text, font, shape, and color, 
 ## Demonstrations
 
 ![Watch the video](assets/video/sample-runthrough-01.mp4)
+
 ![Watch the video](assets/video/sample-runthrough-02.mp4)
 
 ## Examples of Output
